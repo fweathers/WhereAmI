@@ -36,6 +36,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         
         print(locations)
         
+        var userLocation: CLLocation = locations[0]
+        
+        self.latitudeLabel.text = "\(userLocation.coordinate.latitude)"
+        self.longitudeLabel.text = "\(userLocation.coordinate.longitude)"
+
+        self.courseLabel.text = "\(userLocation.course)"
+        self.speedLabel.text = "\(userLocation.speed)"
+        self.altitudeLabel.text = "\(userLocation.altitude)"
+        
+        
+        
+        
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
