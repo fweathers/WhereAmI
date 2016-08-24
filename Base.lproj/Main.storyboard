@@ -112,6 +112,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="addressLabel" destination="AVq-ei-LXm" id="trB-2F-LAC"/>
+                        <outlet property="altitudeLabel" destination="yxO-OY-iWT" id="846-VX-Ldd"/>
+                        <outlet property="courseLabel" destination="qq6-rQ-OOb" id="miW-Pe-XmC"/>
+                        <outlet property="latitudeLabel" destination="q7R-N2-7Dh" id="R14-mq-hfJ"/>
+                        <outlet property="longitudeLabel" destination="ewD-4U-d3h" id="IgP-gP-MhL"/>
+                        <outlet property="speedLabel" destination="Pwo-2M-shU" id="Ow9-oq-9ni"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     var manager: CLLocationManager!
     
+    @IBOutlet weak var latitudeLabel: UILabel!
+    @IBOutlet weak var longitudeLabel: UILabel!
+    @IBOutlet weak var courseLabel: UILabel!
+    @IBOutlet weak var speedLabel: UILabel!
+    @IBOutlet weak var altitudeLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
