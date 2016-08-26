@@ -103,7 +103,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                         country = placemark.country!
                     }
                     
-                    print(subThoroughfare + " " + thoroughfare + "\n" + sublocality + "\n" + subAdministrativeArea + "\n" + postalCode + "\n" + country)
+                    self.addressLabel.text = subThoroughfare + " "     + thoroughfare + "\n" + sublocality + "\n" + subAdministrativeArea + "\n" + postalCode + "\n" + country
+                     
+                    print(subThoroughfare + " "     + thoroughfare + "\n" + sublocality + "\n" + subAdministrativeArea + "\n" + postalCode + "\n" + country)
                 }
             }
         }
