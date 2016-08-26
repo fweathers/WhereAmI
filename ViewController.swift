@@ -56,56 +56,43 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
                 
                 if let placemark = placemarks?[0] {
                     
-                    print(placemark)
-                    
-                    var subThoroughfare = ""
+                    var address = ""
                     
                     if placemark.subThoroughfare != nil {
                         
-                        subThoroughfare = placemark.subThoroughfare!
+                        address += placemark.subThoroughfare! + " "
                         
                     }
-                    
-                    var thoroughfare = ""
                     
                     if placemark.thoroughfare != nil {
                         
-                        thoroughfare = placemark.thoroughfare!
+                        address += placemark.thoroughfare! + "\n"
                     }
-                    
-                    var sublocality = ""
                     
                     if placemark.subLocality != nil {
                         
-                        sublocality = placemark.subLocality!
+                        address += placemark.subLocality! + " "
                     }
-                    
-                    var subAdministrativeArea = ""
                     
                     if placemark.subAdministrativeArea != nil {
                         
-                        subAdministrativeArea = placemark.subAdministrativeArea!
+                        address += placemark.subAdministrativeArea! + " "
                         
                     }
-                    
-                    var postalCode = ""
                     
                     if placemark.postalCode != nil {
                         
-                        postalCode = placemark.postalCode!
+                        address += placemark.postalCode! + "\n"
                         
                     }
-                    
-                    var country = ""
                     
                     if placemark.country != nil {
                         
-                        country = placemark.country!
+                        address += placemark.country!
                     }
                     
-                    self.addressLabel.text = subThoroughfare + " "     + thoroughfare + "\n" + sublocality + "\n" + subAdministrativeArea + "\n" + postalCode + "\n" + country
-                     
-                    print(subThoroughfare + " "     + thoroughfare + "\n" + sublocality + "\n" + subAdministrativeArea + "\n" + postalCode + "\n" + country)
+                    self.addressLabel.text = address
+                    
                 }
             }
         }
